@@ -1,1 +1,12 @@
-<head>Hello There</head>
+<div style="background-color: lightblue;">
+    <h1> My Blog</h1>
+</div>
+
+{% for post in all_posts %}
+    <div style="background-color: black;">
+        <h2 style="color: aqua;">{{post.title}}</h2>
+        <p style="color: blueviolet;">{{post.published_date}}</p>
+        <p style="color: blanchedalmond;">{{post.author}}</p>
+        <p>{{post.text}}</p>
+    </div>
+{%endfor %}
