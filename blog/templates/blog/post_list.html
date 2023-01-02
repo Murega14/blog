@@ -1,12 +1,54 @@
-<div style="background-color: lightblue;">
-    <h1> My Blog</h1>
-</div>
 
+<!DOCTYPE html>
+<html lang="en">
+  <head
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Blogske</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+
+      <div class="navigation w3-highway-blue w3-container">
+        <nav class="nav-container w3-padding-large">
+          <div class="logo">
+            <a href="#home" >Blogs<span>KE</span></a>
+          </div>
+          <div class="mobile-button">
+            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
+          </div>
+                   
+          </div>
+          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
+            <div class="mobile-logo" style="display: inline;">
+              <a href="#home" class="logo">Blogs<span>KE</span></a>
+              <span style="width: 100%;"></span>
+              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
+        </nav>
+      </div>
+
+      <div class="hero" id="home">
+        <div class="text container">
+          <p class="pre-title">Bringing Readers Together</p>
+          <h1 class="title"> Blogs<span>Ke</span></h1>
+        </div>
+      </div>
+      <div>
+        
+      </div>
+
+      
 {% for post in all_posts %}
-    <div style="background-color: black;">
-        <h2 style="color: aqua;">{{post.title}}</h2>
-        <p style="color: blueviolet;">{{post.published_date}}</p>
-        <p style="color: blanchedalmond;">{{post.author}}</p>
-        <p>{{post.text}}</p>
-    </div>
-{%endfor %}
+<div>
+    <h2>{{ post.title }}</h2>
+    <p>{{post.author}}</p>
+    <p>{{ post.published_date }}</p>
+    <p>{{ post.text }}</p>
+</div>
+{% endfor %}
