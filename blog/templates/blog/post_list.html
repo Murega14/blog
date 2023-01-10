@@ -52,6 +52,20 @@
     <h2>{{ post.title }}</h2>
     <p>{{post.author}}</p>
     <p>{{ post.published_date }}</p>
-    <p>{{ post.text }}</p>
+    <p>
+      <div id="text-box"
+      var textBox = document.getElementById("text-box");
+
+      anime({
+          targets: textBox,
+          translateX: 250,
+          duration: 1000,
+          easing: 'easeOutElastic'
+      });>
+   
+{{post.text}}
+
+      </div>
+      
 </div>
 {% endfor %}
