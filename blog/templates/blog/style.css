@@ -8,6 +8,9 @@
   background: #008489;
   height: 66px;
  }
+ header * {
+    color: white;
+ }
 
  header .logo {
   float: left;

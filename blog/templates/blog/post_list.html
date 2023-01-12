@@ -1,71 +1,41 @@
-
 <!DOCTYPE html>
 <html lang="en">
-  <head
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
-    <title>Blogske</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-colors-highway.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="styles.css">
-  </head>
-  <body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie-edge">
+  <!-- Font awesome-->
+  <script src="https://kit.fontawesome.com/c6a2be8feb.js" crossorigin="anonymous"></script>
 
-      <div class="navigation w3-highway-blue w3-container">
-        <nav class="nav-container w3-padding-large">
-          <div class="logo">
-            <a href="home" >Blogs<span>KE</span></a>
-          </div>
-          <div class="mobile-button">
-            <span style="float: right;" onclick="toggleMobileNavigation()">&#9776;</span>
-          </div>
-          <div class="links">
-            <a href="#about" >About</a>
-            <a href="#users.html" >Users</a>          
-          </div>       
-          </div>
-          <div id="mobile-sidenav" class="mobile-links w3-highway-blue">
-            <div class="mobile-logo" style="display: inline;">
-              <a href="#home" class="logo">Blogs<span>KE</span></a>
-              <span style="width: 100%;"></span>
-              <a href="javascript:void(0)" class="closebtn" onclick="toggleMobileNavigation()">&times;</a>
-        </nav>
-      </div>
+  <!--custom styling -->
+  <link rel="style.css" href="blog/styles.css"
+  <title>BlogsKe</title>
+</head>
 
-      <div class="hero" id="home">
-        <div class="text container">
-          <p class="pre-title">Bringing Readers Together</p>
-          <h1 class="title"> Blogs<span>Ke</span></h1>
-        </div>
-      </div>
-      <div>
-        
-      </div>
-
+<body>
+  <header>
+    <div class="logo">
+      <h1 class="logo-text"><span>Blogs</span>Kenya</h1>
+    </div>
+    <i class="fa-fa-bars menu-toggle"></i>
+    <ul class="nav">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Services</a></li>
+      <!-- <li><a href="#">Sign up</a></li>
+      <li><a href="#">Login</a></li> -->
+      <li>
+        <a href="#">Bravin Murega</a>
       
-{% for post in all_posts %}
-<div>
-    <h2>{{ post.title }}</h2>
-    <p>{{post.author}}</p>
-    <p>{{ post.published_date }}</p>
-    <p>
-      <div id="text-box"
-      var textBox = document.getElementById("text-box");
+    
+    <ul>
+      <li><a href="#">Dashboard</a></li>
+      <li><a href="#" class="logout">Logout</a></li>
+    </ul>
+      </li>
+    </ul>
+  </header>
+</body>
 
-      anime({
-          targets: textBox,
-          translateX: 250,
-          duration: 1000,
-          easing: 'easeOutElastic'
-      });>
-   
-{{post.text}}
 
-      </div>
-      
-</div>
-{% endfor %}
+</html>
