@@ -8,13 +8,27 @@
   <script src="https://kit.fontawesome.com/c6a2be8feb.js" crossorigin="anonymous"></script>
 
   <!--custom styling -->
-  <link rel="style.css" href="blog/styles.css"
+  <link rel="style.css" href="blog/styles.css">
   <title>BlogsKe</title>
 </head>
 
 <body>
   <header>
+    <style>
+      .logo {
+        animation: logo-animation 5s infinite;
+      }
+      @keyframes logo-animation{
+        0% {
+          transform: rotate(0deg);
+        }
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
     <div class="logo">
+      <img src="/home/nyaweed/ted_programming/hehe_max_reasonably_small.gif" alt="company logo">
       <h1 class="logo-text"><span>Blogs</span>Kenya</h1>
     </div>
     <i class="fa-fa-bars menu-toggle"></i>
