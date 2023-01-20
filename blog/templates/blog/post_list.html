@@ -1,16 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width", initial-scale="1.0">
   <meta http-equiv="X-UA-Compatible" content="ie-edge">
   <!-- Font awesome-->
   <script src="https://kit.fontawesome.com/c6a2be8feb.js" crossorigin="anonymous"></script>
-=======
   <head
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="UTF-8">
     <title>Blogske</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,10 +19,10 @@
   </head>
 
   <body>
->>>>>>> origin/master
+
 
   <!--custom styling -->
-  <link rel="style.css" href="blog/styles.css">
+  <link rel="style.css" href="blog/templates/blog/styles.css">
   <title>BlogsKe</title>
 </head>
 
@@ -37,16 +34,15 @@
       }
       @keyframes logo-animation{
         0% {
-          transform: rotate(0deg);
+          transform:rotate3d(0deg);
         }
         100% {
-          transform: rotate(360deg);
+          transform: rotate3d(360deg);
         }
       }
     </style>
     <div class="logo">
       
-<<<<<<< HEAD
       <h1 class="logo-text"><span>Blogs</span>Kenya</h1>
     </div>
     <i class="fa-fa-bars menu-toggle"></i>
@@ -71,13 +67,3 @@
 
 
 </html>
-=======
-{% for post in all_posts %}
-<div>
-    <h2>{{ post.title }}</h2>
-    <p>{{post.author}}</p>
-    <p>{{ post.published_date }}</p>
-    <p>{{ post.text }}</p>
-</div>
-{% endfor %}
->>>>>>> origin/master
