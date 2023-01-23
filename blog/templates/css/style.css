@@ -1,0 +1,93 @@
+<style>
+
+   .logo {
+      font: italic;
+      animation: logo-animation 3s ;
+      padding: 0px;
+      margin: 0px;
+   }
+
+   body {
+      padding: 0px;
+      margin: 0px;
+      background: #242324;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+
+   header {
+      background: #008489;
+      height: 66px;
+   }
+   header * {
+      color: rgb(255, 255, 255);
+   }
+
+   header .logo {
+      float: left;
+      height: inherit;
+      margin-left: 2cm;
+
+   }
+   header .logo-text {
+      margin: 5px;
+      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   }
+   header .logo-text span{
+      color: #96eef1;
+
+   }
+
+   header ul {
+      float: right;
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+      border: 0px solid red;
+   }
+
+   header ul li {
+      float: left;
+      position: relative;
+   }
+
+   header ul li ul {
+      position: absolute;
+      top: 66px;
+      left: 0px;
+      width: 180px;
+      display: none;
+
+   }
+   header ul li:hover ul {
+      display: block;
+   }
+
+   header ul li ul li{
+      width: 100px;
+   }
+   
+   header ul li ul li a{
+      padding: 10px;
+      color: beige;
+   }
+
+   header ul li ul li a.logout {
+      color: red;
+   }
+
+   header ul li a:hover {
+      background: #940481;
+   }
+
+   header ul li a {
+      display: block;
+      padding: 21px;
+      font-size: 1.1em;
+      text-decoration: none;
+   }
+
+   header .menu-toggle {
+      display: none;
+   }
+
+</style>
