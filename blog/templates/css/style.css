@@ -1,93 +1,141 @@
-<style>
-
-   .logo {
+.logo {
       font: italic;
       animation: logo-animation 3s ;
       padding: 0px;
       margin: 0px;
-   }
+}
 
-   body {
-      padding: 0px;
-      margin: 0px;
-      background: #242324;
-      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-   }
+body {
+    padding: 0px;
+    margin: 0px;
+    background: #242324;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 
-   header {
-      background: #008489;
-      height: 66px;
-   }
-   header * {
-      color: rgb(255, 255, 255);
-   }
-
-   header .logo {
-      float: left;
-      height: inherit;
-      margin-left: 2cm;
-
-   }
-   header .logo-text {
-      margin: 5px;
-      font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-   }
-   header .logo-text span{
-      color: #96eef1;
-
-   }
-
-   header ul {
-      float: right;
-      margin: 0px;
-      padding: 0px;
-      list-style: none;
-      border: 0px solid red;
-   }
-
-   header ul li {
-      float: left;
-      position: relative;
-   }
-
-   header ul li ul {
-      position: absolute;
-      top: 66px;
-      left: 0px;
-      width: 180px;
-      display: none;
-
-   }
-   header ul li:hover ul {
-      display: block;
-   }
-
-   header ul li ul li{
-      width: 100px;
-   }
+header {
+    background: #008489;
+    height: 66px;
+}
    
-   header ul li ul li a{
-      padding: 10px;
-      color: beige;
-   }
+header * {
+    color: rgb(255, 255, 255);
+}
 
-   header ul li ul li a.logout {
-      color: red;
-   }
+header .logo {
+    float: left;
+    height: inherit;
+    margin-left: 2cm;
 
-   header ul li a:hover {
-      background: #940481;
-   }
+}
 
-   header ul li a {
-      display: block;
-      padding: 21px;
-      font-size: 1.1em;
-      text-decoration: none;
-   }
+header .logo-text {
+    margin: 5px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+   
+header .logo-text span{
+    color: #96eef1;
 
-   header .menu-toggle {
-      display: none;
-   }
+}
 
-</style>
+header ul {
+    float: right;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    border: 0px solid red;
+}
+
+header ul li {
+    float: left;
+    position: relative;
+}
+
+header ul li ul {
+    position: absolute;
+    top: 66px;
+    left: 0px;
+    width: 180px;
+    display: none;
+
+}
+header ul li:hover ul {
+    display: block;
+   
+}
+
+header ul li ul li{
+    width: 100px;
+}
+   
+header ul li ul li a{
+    padding: 10px;
+    color: beige;
+}
+
+header ul li ul li a.logout {
+    color: red;
+}
+
+header ul li a:hover {
+background: #940481;
+}
+
+header ul li a {
+    display: block;
+    padding: 21px;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+header .menu-toggle {
+    display: none;
+}
+/* MEDIA QUERIES */
+@media only screen and (max-width: 750px) {
+    header {
+        position: relative;
+    }
+    header ul {
+        width: 100%;
+        background: #0e94a0;
+        max-height: 0px;
+        overflow: hidden;
+    }
+    .showing {
+        max-height: 100em;
+    }
+
+    header ul li {
+        width: 100%;
+    }
+    header ul li ul {
+        position: static;
+        display: block;
+        width: 100%;
+    }
+    header ul li ul li a {
+        padding: 10px;
+        background: #0e94a0;
+        color: wheat;
+        padding-left: 50px;
+    }
+    header ul li ul li a.logout {
+        color: red;
+    }
+    header .menu-toggle {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+        font-size: 1.8em;
+    }
+    header .logo {
+        margin-left: .8em;
+    
+    }
+    
+    header .logo-text {
+        font-size: 1.4em;
+    }
+}
